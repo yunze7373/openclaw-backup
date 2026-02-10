@@ -1,0 +1,25 @@
+{
+  "name": "claw-backup",
+  "version": "1.0.0",
+  "description": "ClawBackup - A backup and restore utility for ClawDBot",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.1.1",
+    "shelljs": "^0.8.5",
+    "dayjs": "^1.11.10",
+    "chalk": "^4.1.2",
+    "ora": "^5.4.1",
+    "boxen": "^5.1.2",
+    "figlet": "^1.7.0"
+  },
+  "bin": {
+    "claw-backup": "src/index.js"
+  },
+  "keywords": ["backup", "restore", "clawbot", "termux"],
+  "author": "",
+  "license": "MIT"
+}
