@@ -6,7 +6,7 @@
 
 ---
 
-![OpenClaw Backup Banner](assets/banner.png)
+![OpenClaw Backup Banner](assets/banner.svg)
 
 ---
 

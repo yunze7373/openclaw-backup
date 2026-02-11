@@ -1,0 +1,41 @@
+<svg width="1200" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)" />
+  
+  <!-- Grid Lines -->
+  <path d="M0 50 h1200 M0 150 h1200 M0 250 h1200 M0 350 h1200" stroke="#334155" stroke-width="1" opacity="0.3"/>
+  <path d="M100 0 v400 M300 0 v400 M500 0 v400 M700 0 v400 M900 0 v400 M1100 0 v400" stroke="#334155" stroke-width="1" opacity="0.3"/>
+
+  <!-- Shield Icon (Center) -->
+  <g transform="translate(150, 100) scale(0.8)">
+    <path d="M100 0 C100 0 0 20 0 100 C0 180 100 240 100 240 C100 240 200 180 200 100 C200 20 100 0 100 0 Z" fill="url(#shield)" filter="url(#glow)" />
+    <path d="M100 40 L100 200 M60 100 L140 100" stroke="white" stroke-width="15" stroke-linecap="round" />
+  </g>
+
+  <!-- Title Text -->
+  <text x="400" y="180" font-family="Arial, sans-serif" font-weight="bold" font-size="80" fill="white" filter="url(#glow)">OpenClaw</text>
+  <text x="400" y="260" font-family="Arial, sans-serif" font-weight="300" font-size="60" fill="#38bdf8" letter-spacing="4">BACKUP SYSTEM</text>
+  
+  <!-- Status Dots -->
+  <circle cx="1100" cy="50" r="10" fill="#4ade80" filter="url(#glow)" />
+  <text x="1050" y="55" font-family="monospace" font-size="14" fill="#4ade80" text-anchor="end">SYSTEM ACTIVE</text>
+
+</svg>
